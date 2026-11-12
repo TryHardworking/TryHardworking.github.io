@@ -184,7 +184,7 @@ ol { padding: 0; list-style: none; }
 .project { margin-top: 28px; padding: clamp(22px, 3vw, 45px); border: 1px solid var(--line); }
 .project + .project { margin-top: clamp(40px, 6vw, 88px); }
 .project--beauty { background: #dce6dc; }
-.project--skoro { background: #e8e1d1; }
+.project--skoro { background: #f2d33a; }
 .project--chisto { background: #d9e2da; }
 .project__head { display: flex; justify-content: space-between; gap: 20px; padding-bottom: 25px; color: rgba(18,21,22,.68); font-size: 8px; font-weight: 750; letter-spacing: .12em; text-transform: uppercase; }
 .project__layout { display: grid; align-items: stretch; grid-template-columns: minmax(0, 1.62fr) minmax(290px, .58fr); gap: clamp(27px, 4vw, 65px); }
@@ -202,6 +202,7 @@ ol { padding: 0; list-style: none; }
 .project__number { margin-bottom: clamp(38px, 5vw, 75px); color: rgba(18,21,22,.72); font-size: 11px; }
 .project h3 { font-size: clamp(43px, 4.2vw, 70px); font-weight: 500; line-height: .9; letter-spacing: -.07em; }
 .project h3 em { color: var(--green); }
+.project--skoro h3 em { color: #173ee8; }
 .project--chisto h3 span { color: var(--orange); }
 .project__description { margin-top: 28px; color: var(--ink-soft); font-size: 12px; line-height: 1.85; }
 .project__scope { margin-top: auto; padding-top: 35px; }
