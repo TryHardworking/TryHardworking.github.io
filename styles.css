@@ -183,6 +183,7 @@ ol { padding: 0; list-style: none; }
 
 .project { margin-top: 28px; padding: clamp(22px, 3vw, 45px); border: 1px solid var(--line); }
 .project + .project { margin-top: clamp(40px, 6vw, 88px); }
+.project--sdvig { background: #d8cddd; }
 .project--beauty { background: #dce6dc; }
 .project--skoro { background: #f2d33a; }
 .project--chisto { background: #d9e2da; }
@@ -202,6 +203,7 @@ ol { padding: 0; list-style: none; }
 .project__number { margin-bottom: clamp(38px, 5vw, 75px); color: rgba(18,21,22,.72); font-size: 11px; }
 .project h3 { font-size: clamp(43px, 4.2vw, 70px); font-weight: 500; line-height: .9; letter-spacing: -.07em; }
 .project h3 em { color: var(--green); }
+.project--sdvig h3 em { color: #814333; }
 .project--skoro h3 em { color: #173ee8; }
 .project--chisto h3 span { color: var(--orange); }
 .project__description { margin-top: 28px; color: var(--ink-soft); font-size: 12px; line-height: 1.85; }

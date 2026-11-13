@@ -1,0 +1,14 @@
+{
+  "name": "sdvig-clothing-concept",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "An original, self-contained demonstration clothing store for the TRY/HARD portfolio.",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "dev": "node tools/serve.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "test:browser": "node tools/check-browser.mjs",
+    "assets": "node tools/prepare-assets.mjs"
+  }
+}

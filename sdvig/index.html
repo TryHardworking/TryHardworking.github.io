@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ddfb79">
+  <meta name="description" content="СДВИГ — независимая одежда для обычных и необычных дней. Интерактивная дизайн-концепция магазина.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://tryhardworking.github.io/sdvig/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:title" content="СДВИГ — одежда вне сценария">
+  <meta property="og:description" content="Каталог, образы, избранное и полноценная демонстрационная корзина.">
+  <meta property="og:url" content="https://tryhardworking.github.io/sdvig/">
+  <meta property="og:image" content="https://tryhardworking.github.io/sdvig/assets/images/campaign.webp">
+  <title>СДВИГ — одежда вне сценария</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.add("has-js");</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">К содержанию</a>
+
+  <div class="notice" aria-label="Информация о доставке">
+    <div class="notice__track" aria-hidden="true">
+      <span>БЕСПЛАТНАЯ ДОСТАВКА ОТ 12 000 ₽</span><i>↗</i><span>НОВАЯ ГЛАВА / 01</span><i>↗</i><span>ОДЕЖДА ВНЕ СЦЕНАРИЯ</span><i>↗</i>
+      <span>БЕСПЛАТНАЯ ДОСТАВКА ОТ 12 000 ₽</span><i>↗</i><span>НОВАЯ ГЛАВА / 01</span><i>↗</i><span>ОДЕЖДА ВНЕ СЦЕНАРИЯ</span><i>↗</i>
+    </div>
+    <span class="sr-only">Бесплатная доставка от 12 000 рублей. Новая глава 01.</span>
+  </div>
+
+  <header class="site-header" data-header>
+    <a class="logo" href="#top" aria-label="СДВИГ — наверх">
+      <span>СДВИГ</span><b aria-hidden="true">↗</b>
+    </a>
+
+    <nav class="desktop-nav" aria-label="Основная навигация">
+      <a href="#catalog">Каталог <sup>12</sup></a>
+      <a href="#new">Новинки</a>
+      <a href="#looks">Образы</a>
+      <a href="#manifest">О марке</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="header-action header-action--search" type="button" data-search-open aria-label="Найти вещь">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.75"/><path d="m15.6 15.6 5 5"/></svg>
+        <span>Поиск</span>
+      </button>
+      <button class="header-action" type="button" data-favorites-open aria-label="Показать избранные вещи">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.4 5.6a5 5 0 0 0-7.1 0L12 6.9l-1.3-1.3a5 5 0 1 0-7.1 7.1L12 21l8.4-8.3a5 5 0 0 0 0-7.1Z"/></svg>
+        <span class="header-count" data-favorites-count hidden>0</span>
+      </button>
+      <button class="header-action" type="button" data-cart-open aria-label="Открыть корзину, товаров: 0">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.5 8.5h13l1 12h-15l1-12ZM9 9V6a3 3 0 0 1 6 0v3"/></svg>
+        <span class="header-count" data-cart-count hidden>0</span>
+      </button>
+      <button class="menu-button" type="button" data-menu-open aria-label="Открыть меню" aria-controls="menu-dialog"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero__word" aria-hidden="true"><span>СД</span><span>ВИГ</span></div>
+      <div class="hero__grid">
+        <div class="hero__copy" data-reveal>
+          <p class="kicker">НЕЗАВИСИМАЯ МАРКА / КИРОВ<br>ГЛАВА 01 · 2026</p>
+          <h1 id="hero-title">Одежда<br><em>вне сценария.</em></h1>
+          <p class="hero__lead">Для тех, кто меняет маршрут на ходу, не торопится быть понятным и выбирает свой темп.</p>
+          <a class="arrow-link arrow-link--dark" href="#catalog"><span>Смотреть коллекцию</span><b aria-hidden="true">↘</b></a>
+        </div>
+
+        <div class="hero__campaign" data-reveal>
+          <img src="assets/images/campaign.webp" width="1400" height="1600" alt="Чёрно-белый кадр модной съёмки вымышленной кампании СДВИГ">
+          <span class="hero__campaign-code">S / 001</span>
+          <p>ДВИЖЕНИЕ<br>БЕЗ УКАЗАТЕЛЕЙ</p>
+        </div>
+
+        <div class="hero__product" data-reveal>
+          <div class="hero__product-card">
+            <img src="assets/products/volume-lilac.svg" width="640" height="800" alt="Сиреневое худи «Объём»">
+            <a href="#catalog" data-open-product="volume"><span>Худи «Объём»</span><b>7 900 ₽</b><i aria-hidden="true">+</i></a>
+          </div>
+          <span class="hero__sticker" aria-hidden="true">NEW<br>DROP</span>
+        </div>
+      </div>
+      <div class="hero__footer" aria-hidden="true"><span>01</span><span>ЛИНИЯ СВОБОДНОЙ ФОРМЫ</span><span>SCROLL ↓</span></div>
+    </section>
+
+    <section class="statement" id="new" aria-labelledby="statement-title">
+      <div class="statement__meta" data-reveal><span>Глава 01</span><span>12 вещей</span><span>3 образа</span></div>
+      <div class="statement__text" data-reveal>
+        <p>Не коллекция на один сезон.</p>
+        <h2 id="statement-title">Вещи, которые<br><span>подстраиваются</span><br>под твою жизнь.</h2>
+      </div>
+      <div class="statement__orbit" aria-hidden="true"><span>СДВИГ · НОСИ · МЕНЯЙ · </span><b>↗</b></div>
+    </section>
+
+    <section class="catalog section" id="catalog" aria-labelledby="catalog-title">
+      <div class="section-head" data-reveal>
+        <div><p class="eyebrow">01 / Каталог</p><h2 id="catalog-title">Выбери<br><em>свой слой.</em></h2></div>
+        <p>Свободные формы, плотные материалы и цвета, которые легко соединяются между собой.</p>
+      </div>
+
+      <div class="catalog-toolbar" data-reveal>
+        <div class="category-tabs" role="group" aria-label="Категории товаров" data-categories></div>
+        <div class="catalog-toolbar__end">
+          <button class="filter-toggle" type="button" data-filter-toggle aria-expanded="false" aria-controls="filter-panel">Фильтры <span data-filter-count hidden>0</span><b aria-hidden="true">＋</b></button>
+          <label class="sort-control"><span class="sr-only">Сортировка</span><select data-sort>
+            <option value="featured">Сначала избранное</option>
+            <option value="new">Сначала новинки</option>
+            <option value="price-asc">Сначала дешевле</option>
+            <option value="price-desc">Сначала дороже</option>
+          </select></label>
+        </div>
+      </div>
+
+      <div class="filter-panel" id="filter-panel" data-filter-panel hidden>
+        <div class="filter-panel__search">
+          <label for="catalog-search">Найти по названию</label>
+          <div><input id="catalog-search" type="search" inputmode="search" autocomplete="off" placeholder="Например, худи" data-search><button type="button" data-search-clear aria-label="Очистить поиск">×</button></div>
+        </div>
+        <fieldset><legend>Размер</legend><div class="check-row" data-size-filters></div></fieldset>
+        <fieldset><legend>Цвет</legend><div class="color-filter-row" data-color-filters></div></fieldset>
+        <fieldset class="price-filter"><legend>Цена до <output data-price-output>16 000 ₽</output></legend><input type="range" min="3000" max="16000" step="1000" value="16000" data-price aria-label="Максимальная цена"><div><span>3 000 ₽</span><span>16 000 ₽</span></div></fieldset>
+        <label class="favorite-filter"><input type="checkbox" data-favorites-only><span>Только избранное</span></label>
+        <button class="text-button" type="button" data-filter-reset>Сбросить всё</button>
+      </div>
+
+      <div class="catalog-status"><p aria-live="polite" data-result-count>Найдено 12 вещей</p><button type="button" data-active-reset hidden>Сбросить фильтры</button></div>
+      <div class="product-grid" data-product-grid></div>
+      <div class="catalog-empty" data-catalog-empty hidden>
+        <span aria-hidden="true">∅</span><h3>Таких вещей пока нет</h3><p>Попробуй убрать один из фильтров или изменить запрос.</p><button class="arrow-link arrow-link--dark" type="button" data-empty-reset><span>Показать всё</span><b>↗</b></button>
+      </div>
+      <noscript><p class="noscript">Для интерактивного каталога нужен JavaScript. Проект не отправляет данные и работает целиком в браузере.</p></noscript>
+    </section>
+
+    <section class="looks section" id="looks" aria-labelledby="looks-title">
+      <div class="looks__intro" data-reveal>
+        <p class="eyebrow">02 / Собрать образ</p>
+        <h2 id="looks-title">Три настроения.<br><em>Ноль правил.</em></h2>
+        <p>Готовые сочетания — только точка старта. Выбирай размеры и забирай образ целиком.</p>
+      </div>
+      <div class="looks__tabs" role="tablist" aria-label="Выбрать образ" data-look-tabs></div>
+      <div class="look-builder" data-look-builder></div>
+    </section>
+
+    <section class="editorial" id="manifest" aria-labelledby="manifest-title">
+      <div class="editorial__image" data-reveal>
+        <img src="assets/images/studio.webp" width="1000" height="1100" alt="Чёрно-белый кадр из студии вымышленной марки СДВИГ" loading="lazy">
+        <span>КИРОВ / 58.6036° N</span>
+      </div>
+      <div class="editorial__copy" data-reveal>
+        <p class="eyebrow">03 / Манифест</p>
+        <h2 id="manifest-title">Мы не знаем,<br>куда ты идёшь.<br><em>И это прекрасно.</em></h2>
+        <p class="editorial__lead">«СДВИГ» — вымышленная независимая марка про свободу менять решение. Никаких обязательных сочетаний, поводов и правильных маршрутов.</p>
+        <ul>
+          <li><span>01</span><p><strong>Форма не мешает.</strong> Продуманный объём и понятная размерная сетка.</p></li>
+          <li><span>02</span><p><strong>Вещи дружат.</strong> Цвета и слои собраны в одну гибкую систему.</p></li>
+          <li><span>03</span><p><strong>Честная демонстрация.</strong> Без выдуманных отзывов, скидочных таймеров и фальшивых покупок.</p></li>
+        </ul>
+      </div>
+      <p class="editorial__stamp" aria-hidden="true">ВНЕ<br>СЦЕНАРИЯ</p>
+    </section>
+
+    <section class="info section" aria-labelledby="info-title">
+      <div class="section-head section-head--compact" data-reveal>
+        <div><p class="eyebrow">04 / Коротко о важном</p><h2 id="info-title">Спокойно.<br><em>Всё понятно.</em></h2></div>
+      </div>
+      <div class="info-grid">
+        <article data-reveal><span>↗</span><h3>Доставка</h3><p>Демо-расчёт для пункта выдачи, курьера или самовывоза. От 12 000 ₽ — бесплатно.</p></article>
+        <article data-reveal><span>↺</span><h3>Возврат</h3><p>В реальном магазине здесь были бы точные условия и срок возврата. В концепте покупки не совершаются.</p></article>
+        <article data-reveal><span>◎</span><h3>Размеры</h3><p>В каждой карточке есть замеры изделия. Выбирай по ним, а не только по букве на бирке.</p></article>
+        <article data-reveal><span>♢</span><h3>Уход</h3><p>Состав и рекомендации указаны отдельно для каждой вещи — они открываются в карточке товара.</p></article>
+      </div>
+    </section>
+
+    <section class="subscribe" aria-labelledby="subscribe-title">
+      <div>
+        <p class="eyebrow">Следующая глава</p>
+        <h2 id="subscribe-title">Узнать<br><em>первым.</em></h2>
+      </div>
+      <form data-subscribe-form novalidate>
+        <label for="subscribe-email">Электронная почта</label>
+        <div><input id="subscribe-email" name="email" type="email" autocomplete="email" placeholder="you@example.ru" required><button type="submit" aria-label="Подписаться">↗</button></div>
+        <p data-subscribe-status aria-live="polite">Демонстрационная подписка: адрес никуда не отправляется.</p>
+      </form>
+      <span class="subscribe__number" aria-hidden="true">02</span>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="footer-logo" href="#top">СДВИГ<span>↗</span></a>
+    <div class="footer-grid">
+      <div><p>Навигация</p><a href="#catalog">Каталог</a><a href="#looks">Образы</a><a href="#manifest">О марке</a></div>
+      <div><p>Информация</p><button type="button" data-cart-open>Корзина</button><button type="button" data-favorites-open>Избранное</button><a href="#info-title">Доставка и возврат</a></div>
+      <div><p>Проект</p><a href="https://tryhardworking.github.io/">TRY/HARD portfolio ↗</a><a href="https://github.com/TryHardworking" target="_blank" rel="noopener">GitHub ↗</a></div>
+      <p class="footer-note">Это интерактивная дизайн-концепция. Марка и товары вымышлены, оплата и передача данных не выполняются.</p>
+    </div>
+    <div class="footer-bottom"><span>© <b data-year>2026</b> СДВИГ / ДЕМО</span><span>СДЕЛАНО TRY/HARD</span><a href="#top">НАВЕРХ ↑</a></div>
+  </footer>
+
+  <dialog class="menu-dialog side-dialog" id="menu-dialog" aria-labelledby="menu-title">
+    <div class="side-dialog__bar"><span>Меню</span><button type="button" data-dialog-close aria-label="Закрыть меню">×</button></div>
+    <div class="menu-dialog__body">
+      <p id="menu-title">СДВИГ <span>↗</span></p>
+      <nav aria-label="Мобильная навигация"><a href="#catalog"><span>01</span>Каталог</a><a href="#new"><span>02</span>Новинки</a><a href="#looks"><span>03</span>Образы</a><a href="#manifest"><span>04</span>О марке</a></nav>
+      <div><button type="button" data-favorites-open>Избранное <span data-favorites-count>0</span></button><button type="button" data-cart-open>Корзина <span data-cart-count>0</span></button></div>
+      <small>Интерактивная дизайн-концепция · 2026</small>
+    </div>
+  </dialog>
+
+  <dialog class="product-dialog" id="product-dialog" aria-labelledby="product-dialog-title">
+    <button class="dialog-close dialog-close--floating" type="button" data-dialog-close aria-label="Закрыть карточку товара">×</button>
+    <div class="product-dialog__layout">
+      <div class="product-dialog__media">
+        <div class="product-dialog__image"><img data-product-image src="assets/products/pause-chalk.svg" width="640" height="800" alt=""></div>
+        <div class="view-switch" role="group" aria-label="Вид изделия"><button type="button" data-view="front" aria-pressed="true">Спереди</button><button type="button" data-view="back" aria-pressed="false">Сзади</button></div>
+        <span data-product-code>S / 001</span>
+      </div>
+      <div class="product-dialog__content">
+        <div class="product-dialog__top"><p data-product-tag>База с характером</p><button type="button" data-product-favorite aria-label="Добавить товар в избранное"><span aria-hidden="true">♡</span></button></div>
+        <h2 id="product-dialog-title" data-product-name>Лонгслив «Пауза»</h2>
+        <p class="product-dialog__price" data-product-price>3 900 ₽</p>
+        <p class="product-dialog__description" data-product-description></p>
+        <fieldset class="choice"><legend>Цвет: <b data-color-name></b></legend><div class="swatches" data-product-colors></div></fieldset>
+        <fieldset class="choice"><legend>Размер <button type="button" data-size-help>Как выбрать?</button></legend><div class="size-options" data-product-sizes></div><p class="stock-note" data-stock-note aria-live="polite"></p></fieldset>
+        <button class="add-button" type="button" data-product-add><span>Добавить в корзину</span><b data-product-add-price></b></button>
+        <div class="product-details">
+          <details><summary>Замеры изделия <span>＋</span></summary><div data-measurements></div></details>
+          <details><summary>Состав <span>＋</span></summary><p data-composition></p></details>
+          <details><summary>Уход <span>＋</span></summary><p data-care></p></details>
+        </div>
+        <p class="demo-note">Демонстрационный товар: оформление не создаёт реальную покупку.</p>
+      </div>
+    </div>
+  </dialog>
+
+  <dialog class="cart-dialog side-dialog" id="cart-dialog" aria-labelledby="cart-title">
+    <div class="side-dialog__bar"><h2 id="cart-title">Корзина <span data-cart-title-count>0</span></h2><button type="button" data-dialog-close aria-label="Закрыть корзину">×</button></div>
+    <div class="cart-dialog__body">
+      <div class="shipping-progress" data-shipping-progress>
+        <p data-shipping-message></p><div><span data-shipping-bar></span></div>
+      </div>
+      <div class="cart-lines" data-cart-lines></div>
+      <div class="cart-empty" data-cart-empty hidden><span aria-hidden="true">↗</span><h3>Здесь пока свободно</h3><p>Выбери вещь или собери один из готовых образов.</p><button class="arrow-link arrow-link--dark" type="button" data-cart-catalog><span>Перейти в каталог</span><b>↘</b></button></div>
+    </div>
+    <div class="cart-dialog__footer" data-cart-footer>
+      <fieldset class="delivery-mini"><legend>Получение</legend><div data-delivery-options></div></fieldset>
+      <form class="coupon" data-coupon-form novalidate><label for="coupon-code">Промокод</label><div><input id="coupon-code" name="coupon" autocomplete="off" autocapitalize="characters" placeholder="Код"><button type="submit">Применить</button></div><p data-coupon-status aria-live="polite"></p></form>
+      <dl class="cart-totals"><div><dt>Товары</dt><dd data-subtotal></dd></div><div data-discount-row hidden><dt>Скидка</dt><dd data-discount></dd></div><div><dt>Доставка</dt><dd data-delivery-price></dd></div><div><dt>Итого</dt><dd data-total></dd></div></dl>
+      <button class="add-button" type="button" data-checkout-open><span>Перейти к оформлению</span><b>↗</b></button>
+      <p class="demo-note">Это демо: карта и оплата не потребуются.</p>
+    </div>
+  </dialog>
+
+  <dialog class="checkout-dialog" id="checkout-dialog" aria-labelledby="checkout-title">
+    <div class="side-dialog__bar"><button class="back-button" type="button" data-checkout-back>← Корзина</button><button type="button" data-dialog-close aria-label="Закрыть оформление">×</button></div>
+    <div class="checkout-dialog__layout">
+      <form class="checkout-form" data-checkout-form novalidate>
+        <p class="eyebrow">Демонстрационное оформление</p>
+        <h2 id="checkout-title">Куда передать<br><em>воображаемый заказ?</em></h2>
+        <div class="checkout-fields">
+          <label><span>Имя</span><input name="name" autocomplete="name" required minlength="2" placeholder="Как к вам обращаться"><small data-error-for="name"></small></label>
+          <label><span>Электронная почта</span><input name="email" type="email" autocomplete="email" required placeholder="you@example.ru"><small data-error-for="email"></small></label>
+          <label><span>Телефон</span><input name="phone" type="tel" autocomplete="tel" inputmode="tel" required placeholder="+7 999 000-00-00"><small data-error-for="phone"></small></label>
+          <label data-address-field><span>Адрес</span><input name="address" autocomplete="street-address" required placeholder="Город и адрес"><small data-error-for="address"></small></label>
+          <label><span>Комментарий <i>необязательно</i></span><textarea name="comment" rows="3" maxlength="300" placeholder="Например, оставить у двери"></textarea></label>
+        </div>
+        <label class="consent"><input name="consent" type="checkbox" required><span>Я понимаю, что это демонстрация: заказ никуда не отправится, а введённые данные не сохранятся.</span></label><small class="consent-error" data-error-for="consent"></small>
+        <button class="add-button" type="submit"><span>Подтвердить демо-заказ</span><b data-checkout-total></b></button>
+      </form>
+      <aside class="checkout-summary" aria-label="Состав заказа">
+        <p>Ваш выбор</p><div data-checkout-lines></div><dl><div><dt>Получение</dt><dd data-checkout-delivery></dd></div><div><dt>Итого</dt><dd data-checkout-summary-total></dd></div></dl>
+        <p class="demo-note">Оплата отключена. Форма не выполняет сетевых запросов.</p>
+      </aside>
+    </div>
+  </dialog>
+
+  <dialog class="success-dialog" id="success-dialog" aria-labelledby="success-title">
+    <button class="dialog-close dialog-close--floating" type="button" data-dialog-close aria-label="Закрыть подтверждение">×</button>
+    <span class="success-dialog__mark" aria-hidden="true">↗</span>
+    <p>ДЕМО / ГОТОВО</p>
+    <h2 id="success-title">Маршрут<br><em>построен.</em></h2>
+    <p>Настоящий заказ не создан, данные не отправлены и не сохранены. Но сценарий работает от начала до конца.</p>
+    <dl><div><dt>Номер демонстрации</dt><dd data-order-number></dd></div><div><dt>Сумма</dt><dd data-order-total></dd></div></dl>
+    <button class="arrow-link arrow-link--dark" type="button" data-success-close><span>Вернуться в магазин</span><b>↗</b></button>
+  </dialog>
+
+  <div class="toast" role="status" aria-live="polite" data-toast></div>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
