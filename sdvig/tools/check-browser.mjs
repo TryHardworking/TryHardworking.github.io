@@ -188,6 +188,7 @@ try {
         return {
           width:innerWidth,clientWidth:html.clientWidth,scrollWidth:html.scrollWidth,
           title:document.title,cards:document.querySelectorAll('.product-card').length,
+          portfolioLink:[...document.querySelectorAll('.footer-grid a')].find(link=>link.textContent.includes('TRY/HARD portfolio'))?.href,
           fonts:[...document.fonts].map(font=>({family:font.family,status:font.status})),
           brokenImages:[...document.images].filter(image=>!image.complete||!image.naturalWidth).map(image=>image.currentSrc||image.src),
           revealHidden:[...document.querySelectorAll('[data-reveal]')].filter(node=>getComputedStyle(node).opacity==='0').length,
@@ -203,6 +204,7 @@ try {
         (method === "Network.requestWillBeSent" && (params.request.method !== "GET" && params.request.method !== "HEAD" || !params.request.url.startsWith(new URL(base).origin))));
       assert(data.scrollWidth <= data.clientWidth + 1, data);
       assert(data.cards === 12 && data.brokenImages.length === 0 && data.revealHidden === 0 && data.hiddenLeaks === 0, data);
+      assert(data.portfolioLink === 'https://tryhardworking.github.io/', data);
       assert(data.fonts.every((font) => font.status === "loaded"), data.fonts);
       assert(data.header.left >= -1 && data.header.right <= data.clientWidth + 1 && data.h1.left >= -1 && data.h1.right <= data.clientWidth + 1, data);
       assert(width > 900 ? data.menuDisplay === "none" : data.menuDisplay !== "none", data);

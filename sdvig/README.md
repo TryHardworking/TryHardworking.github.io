@@ -2,8 +2,10 @@
 
 Самостоятельный магазин-концепт для портфолио TRY/HARD. Вымышленная марка, оригинальная айдентика и авторские иллюстрации вещей. Это не настоящий продавец: товары, остатки, скидка и доставка демонстрационные.
 
-Адрес магазина: https://tryhardworking.github.io/sdvig/  
-Портфолио: https://tryhardworking.github.io/
+- Магазин: https://tryhardworking.github.io/sdvig/
+- Портфолио: https://tryhardworking.github.io/
+
+Публичный магазин обслуживает проектный сайт репозитория [`TryHardworking/sdvig`](https://github.com/TryHardworking/sdvig), ветка `main`. Портфолио опубликовано из [`TryHardworking/TryHardworking.github.io`](https://github.com/TryHardworking/TryHardworking.github.io); там также сохранена копия магазина в `sdvig/`. Обновления публичного магазина нужно отправлять в репозиторий `sdvig`: его GitHub Pages имеет приоритет для маршрута `/sdvig/`.
 
 ## Запуск
 
