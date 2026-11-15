@@ -5,367 +5,536 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#0c0c0d">
   <meta name="robots" content="index, follow">
-  <meta name="description" content="TRY/HARD — дизайн и разработка сайтов с характером. Четыре опубликованных концепта: СДВИГ, Система Красоты, СкороЧисто и ЧИСТО.">
-  <title>TRY/HARD — сайты с характером</title>
-  <link rel="canonical" href="https://tryhardworking.github.io/">
-  <meta property="og:type" content="website">
-  <meta property="og:locale" content="ru_RU">
-  <meta property="og:title" content="TRY/HARD — сайты с характером">
-  <meta property="og:description" content="Дизайн и разработка сайтов с характером. Четыре самостоятельных концепта, личный подход и полный цикл.">
-  <meta property="og:url" content="https://tryhardworking.github.io/">
+  <meta name="description" content="TRY/HARD — дизайн и разработка сайтов с характером. Четыре концепта и NEXUS CRM: СДВИГ, Система Красоты, СкороЧисто, ЧИСТО.">
+  <title>TRY/HARD — дизайн и код с характером</title>
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preload" href="assets/fonts/manrope-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/lora-italic-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/lora-italic-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="hero.css">
-  <link rel="stylesheet" href="sections.css">
-  <script src="hero.js" defer></script>
-  <script src="sections.js" defer></script>
   <script src="app.js" defer></script>
+  <noscript><style>.intro{display:none}</style></noscript>
 </head>
 <body>
-  <svg class="svg-definitions" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-    <symbol id="arrow-up-right" viewBox="0 0 24 24"><path d="M5 19 19 5M5 5h14v14"/></symbol>
-    <symbol id="arrow-down" viewBox="0 0 24 24"><path d="M12 4v16m-6-6 6 6 6-6"/></symbol>
-    <symbol id="arrow-right" viewBox="0 0 24 24"><path d="M4 12h16m-6-6 6 6-6 6"/></symbol>
-    <symbol id="plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
-    <symbol id="close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
-    <symbol id="structure" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 9v12"/></symbol>
-    <symbol id="layers" viewBox="0 0 24 24"><path d="m12 3 9 5-9 5-9-5 9-5Zm-9 9 9 5 9-5M3 16l9 5 9-5"/></symbol>
-    <symbol id="code" viewBox="0 0 24 24"><path d="m7 7-5 5 5 5M17 7l5 5-5 5M14 4l-4 16"/></symbol>
+  <svg class="svg-defs" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 19 19 5M5 5h14v14"/></symbol>
+    <symbol id="i-down" viewBox="0 0 24 24"><path d="M12 4v16m-6-6 6 6 6-6"/></symbol>
+    <symbol id="i-right" viewBox="0 0 24 24"><path d="M4 12h16m-6-6 6 6-6 6"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
+    <symbol id="i-code" viewBox="0 0 24 24"><path d="m7 7-5 5 5 5M17 7l5 5-5 5M14 4l-4 16"/></symbol>
   </svg>
+
+  <!-- ============ INTRO CURTAIN ============ -->
+  <div class="intro" data-intro aria-hidden="true">
+    <div class="intro-inner">
+      <p class="intro-brand">TRY<span>/</span>HARD</p>
+      <p class="intro-note">портфолио<span>/</span><span data-year>2026</span></p>
+      <span class="intro-line"><i></i></span>
+    </div>
+  </div>
 
   <a class="skip-link" href="#main">Перейти к содержанию</a>
 
   <header class="site-header" data-header>
     <div class="shell header-inner">
-      <a class="brand" href="#top" aria-label="TRY/HARD — на первый экран">TRY<span>/</span>HARD</a>
+      <a class="brand" href="#top">TRY<span>/</span>HARD</a>
       <nav class="site-nav" aria-label="Основная навигация">
-        <a href="#work">Работы <span>04</span></a>
+        <a href="#work">Работы <sup>05</sup></a>
+        <a href="#nexus">NEXUS CRM</a>
+        <a href="#about">Обо мне</a>
         <a href="#approach">Подход</a>
-        <a href="#process">Этапы</a>
         <a href="#contact">Контакт</a>
       </nav>
-      <a class="header-contact" href="#contact">Есть идея?<svg class="icon" aria-hidden="true"><use href="#arrow-up-right"/></svg></a>
-      <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobile-menu" data-menu-toggle hidden>
+      <a class="header-cta" href="#contact"><span>Есть идея?</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobile-menu" data-menu-toggle>
         <span></span><span></span>
       </button>
     </div>
-    <div class="scroll-progress" aria-hidden="true" data-scroll-progress></div>
+    <span class="scroll-progress" aria-hidden="true" data-progress></span>
   </header>
 
   <main id="main">
-    <section class="hero hero--flagship dark-surface" id="top" aria-labelledby="hero-title" data-hero>
-      <div class="hero-atmosphere" aria-hidden="true"></div>
-      <div class="hero-light" aria-hidden="true" data-hero-light></div>
-      <canvas class="hero-blueprint" aria-hidden="true" data-hero-canvas></canvas>
-      <span class="hero-side-index" aria-hidden="true">INDEPENDENT DIGITAL CRAFT — TRY / HARD</span>
+    <!-- ============ HERO ============ -->
+    <section class="hero dark-surface" id="top" aria-labelledby="hero-title">
+      <div class="hero-atmo" aria-hidden="true">
+        <i class="atmo-glow"></i>
+        <i class="atmo-spot atmo-spot--a"></i>
+        <i class="atmo-spot atmo-spot--b"></i>
+        <i class="atmo-spot atmo-spot--c"></i>
+        <i class="atmo-grid"></i>
+        <span class="atmo-cross atmo-cross--a">+</span>
+        <span class="atmo-cross atmo-cross--b">+</span>
+        <span class="atmo-cross atmo-cross--c">+</span>
+        <span class="atmo-ring"></span>
+        <span class="hero-light"></span>
+      </div>
+      <span class="hero-side" aria-hidden="true">INDEPENDENT DIGITAL CRAFT — TRY / HARD</span>
+
       <div class="shell hero-inner">
-        <div class="hero-topline" data-hero-enter>
+        <div class="hero-topline h-enter" style="--d:.05s">
           <p><span class="status-dot" aria-hidden="true"></span>Открыт к новым проектам</p>
-          <p>Личный подход. Полный цикл.<span class="meta-divider">/</span><span data-year>2026</span></p>
+          <p>Личный подход. Полный цикл.<span class="meta-sep">/</span><span data-year>2026</span></p>
         </div>
 
-        <div class="hero-grid">
+        <div class="hero-stage">
           <div class="hero-copy">
-            <div class="hero-signal" data-hero-enter>
-              <span class="hero-signal-symbol" aria-hidden="true"><span></span><span></span></span>
-              <span class="hero-accessible">Структура, выразительный дизайн и разработка сайтов</span>
-              <span class="hero-word-mask" aria-hidden="true"><span data-hero-word>Дизайн со смыслом</span></span>
-              <span class="hero-signal-index" aria-hidden="true"><span data-hero-word-index>01</span><span>/ 03</span></span>
-            </div>
-            <h1 class="hero-title" id="hero-title" data-reveal>
-              <span class="hero-title-line"><span class="hero-title-line-inner" data-hero-title-line>Сайты<span class="hero-title-comma">,</span></span></span>
-              <span class="hero-title-line hero-title-line--middle"><span class="hero-title-line-inner" data-hero-title-line>которые</span></span>
-              <span class="hero-title-line hero-title-line--metal"><span class="hero-title-line-inner" data-hero-title-line><em>замечают.</em></span></span>
+            <p class="hero-signal h-enter" style="--d:.5s" data-cycler>
+              <span class="signal-mark" aria-hidden="true"><i></i><i></i></span>
+              <span class="cycler-window"><span class="cycler-word is-active">Дизайн со смыслом</span><span class="cycler-word">Код с характером</span><span class="cycler-word">Структура с логикой</span></span>
+              <span class="signal-index" aria-hidden="true"><span data-cycler-index>01</span><em>/ 03</em></span>
+            </p>
+
+            <h1 class="hero-title" id="hero-title">
+              <span class="ht-line mask"><span class="ht-inner h-enter" style="--d:.15s">Сайты<i class="ht-comma">,</i></span></span>
+              <span class="ht-line ht-line--mid mask"><span class="ht-inner ht-italic h-enter" style="--d:.27s"><em>которые</em></span></span>
+              <span class="ht-line mask"><span class="ht-inner ht-outline h-enter" style="--d:.39s"><span class="glow-word" tabindex="0">замечают<i class="ht-dot">.</i></span></span></span>
             </h1>
-            <p class="hero-lead" data-reveal data-hero-enter>Смысл, визуал, код. Превращаю вашу идею в сайт, который не растворяется среди похожих.</p>
-            <div class="hero-actions" data-hero-enter>
-              <a class="button button--silver hero-primary" href="#contact" data-hero-magnetic>
-                <span class="hero-button-content">Обсудить проект<svg class="icon" aria-hidden="true"><use href="#arrow-up-right"/></svg></span>
-              </a>
-              <a class="hero-work-link" href="#work">
-                <span class="hero-preview-stack" aria-hidden="true">
+
+            <p class="hero-lead h-enter" style="--d:.62s">Смысл, визуал, код. Превращаю идею в сайт, который не растворяется среди похожих. Один автор — от первой мысли до последней детали.</p>
+
+            <div class="hero-actions h-enter" style="--d:.72s">
+              <a class="btn btn--accent" href="#contact" data-magnetic><span>Обсудить проект</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+              <a class="hero-worklink" href="#work">
+                <span class="worklink-stack" aria-hidden="true">
                   <img src="assets/images/sdvig.webp" width="64" height="48" alt="" decoding="async">
                   <img src="assets/images/sistema-krasoti.webp" width="64" height="48" alt="" decoding="async">
                   <img src="assets/images/skorochisto.webp" width="64" height="48" alt="" decoding="async">
                 </span>
-                <span class="hero-work-link-text">Смотреть работы<span>04 опубликованных концепта</span></span>
-                <svg class="icon" aria-hidden="true"><use href="#arrow-up-right"/></svg>
+                <span class="worklink-text">Смотреть работы<em>04 концепта + NEXUS CRM</em></span>
+                <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>
               </a>
             </div>
-            <nav class="social-links social-links--hero" aria-label="Связаться — первый экран" data-hero-enter>
-              <a class="social-link" href="https://vk.ru/tryhardwork" target="_blank" rel="noopener" aria-label="VK — профиль TRY/HARD, новая вкладка" data-contact-channel="vk">VK<svg class="icon" aria-hidden="true"><use href="#arrow-up-right"/></svg></a>
-              <a class="social-link" href="https://t.me/w333ntaryk" target="_blank" rel="noopener" aria-label="Telegram — написать TRY/HARD, новая вкладка" data-contact-channel="telegram">Telegram<svg class="icon" aria-hidden="true"><use href="#arrow-up-right"/></svg></a>
-              <a class="social-link" href="https://max.ru/u/f9LHodD0cOJSXVws0FqQomlxJ1d2Ss3WUUin1xHbbfO2mo94Tqf8PqavAMs" target="_blank" rel="noopener" aria-label="MAX — написать TRY/HARD, новая вкладка" data-contact-channel="max">MAX<svg class="icon" aria-hidden="true"><use href="#arrow-up-right"/></svg></a>
+
+            <nav class="hero-social h-enter" style="--d:.82s" aria-label="Контакты — первый экран">
+              <a href="https://vk.ru/tryhardwork" target="_blank" rel="noopener">VK</a>
+              <a href="https://t.me/w333ntaryk" target="_blank" rel="noopener">Telegram</a>
+              <a href="https://max.ru/u/f9LHodD0cOJSXVws0FqQomlxJ1d2Ss3WUUin1xHbbfO2mo94Tqf8PqavAMs" target="_blank" rel="noopener">MAX</a>
+              <a href="https://github.com/TryHardworking" target="_blank" rel="noopener">GitHub</a>
             </nav>
-            <div class="hero-craft-note" data-hero-enter><span aria-hidden="true">↳</span><p>Один автор. От первой мысли до последней детали.</p></div>
           </div>
 
-          <figure class="portrait portrait--hero" data-portrait-slot="hero" data-reveal>
-            <div class="hero-photo-frame" data-hero-frame>
-              <div class="portrait-canvas">
-                <div class="portrait-placeholder hero-photo-fallback" data-portrait-placeholder>
-                  <span class="hero-fallback-monogram" aria-hidden="true">TH / 01</span>
-                  <p>Портрет TRY/HARD</p><span>Фотография временно недоступна</span>
-                </div>
-                <img class="portrait-photo" src="assets/images/portrait-hero.webp" width="1024" height="1536" alt="Автор TRY/HARD — портрет на стуле" decoding="async" fetchpriority="high">
-                <div class="hero-photo-details" aria-hidden="true">
-                  <div class="hero-frame-heading"><span>TRY / HARD</span><span>PERSONAL EDITION — 01</span></div>
-                  <div class="hero-frame-glint" aria-hidden="true"></div>
-                  <span class="hero-frame-coordinate hero-frame-coordinate--left" aria-hidden="true">48° / STUDIO LIGHT</span>
-                  <span class="hero-frame-coordinate hero-frame-coordinate--right" aria-hidden="true">DESIGNED TO FEEL</span>
-                </div>
-              </div>
-              <div class="hero-stamp" aria-hidden="true">
-                <svg class="hero-stamp-type" viewBox="0 0 100 100"><defs><path id="hero-stamp-circle" d="M50,50 m-37,0 a37,37 0 1,1 74,0 a37,37 0 1,1 -74,0"/></defs><text><textPath href="#hero-stamp-circle" textLength="231">DESIGN WITH CHARACTER · TRY / HARD · </textPath></text></svg>
-                <svg class="icon hero-stamp-arrow" aria-hidden="true"><use href="#arrow-up-right"/></svg>
-              </div>
-              <div class="hero-frame-corner hero-frame-corner--top" aria-hidden="true"></div>
-              <div class="hero-frame-corner hero-frame-corner--bottom" aria-hidden="true"></div>
+          <figure class="hero-portrait h-enter" style="--d:.45s">
+            <div class="frame frame--hero" data-parallax="0.07">
+              <span class="frame-corner frame-corner--tl" aria-hidden="true"></span>
+              <span class="frame-corner frame-corner--br" aria-hidden="true"></span>
+              <img src="assets/images/portrait-hero.webp" width="1024" height="1536" alt="Автор TRY/HARD — портрет" fetchpriority="high" decoding="async">
+              <span class="frame-meta frame-meta--tl" aria-hidden="true">48° / STUDIO LIGHT</span>
+              <span class="frame-meta frame-meta--br" aria-hidden="true">DESIGNED TO FEEL</span>
+              <span class="stamp stamp--hero" aria-hidden="true">
+                <svg viewBox="0 0 100 100"><defs><path id="stamp-hero" d="M50,50 m-37,0 a37,37 0 1,1 74,0 a37,37 0 1,1 -74,0"/></defs><text><textPath href="#stamp-hero" textLength="232">DESIGN WITH CHARACTER · TRY / HARD · </textPath></text></svg>
+                <svg class="icon"><use href="#i-arrow"/></svg>
+              </span>
             </div>
-            <figcaption><span><i aria-hidden="true"></i>Личный подход, не безликая студия</span><span>TH / 01</span></figcaption>
+            <figcaption><span><i aria-hidden="true"></i>Личный подход, не безликая студия</span><span>TH&nbsp;/&nbsp;01</span></figcaption>
           </figure>
         </div>
 
-        <div class="hero-bottom" data-hero-enter>
-          <a class="hero-project-count" href="#work"><strong>04</strong><span>проекта.<br>Ни одного одинакового.</span></a>
-          <div class="hero-project-ticker" aria-hidden="true"><div class="hero-ticker-track"><span>СДВИГ <i>✳</i> СИСТЕМА КРАСОТЫ <i>✳</i> СКОРОЧИСТО <i>✳</i> ЧИСТО <i>✳</i> </span><span>СДВИГ <i>✳</i> СИСТЕМА КРАСОТЫ <i>✳</i> СКОРОЧИСТО <i>✳</i> ЧИСТО <i>✳</i> </span></div></div>
-          <div class="hero-bottom-actions">
-            <a class="hero-scroll-cue" href="#work"><span class="hero-accessible">Дальше — работы</span><svg class="icon" aria-hidden="true"><use href="#arrow-down"/></svg></a>
+        <div class="hero-bottom h-enter" style="--d:.95s">
+          <a class="hero-count" href="#work"><strong>04</strong><span>проекта.<br>Ни одного одинакового.</span></a>
+          <div class="ticker" aria-hidden="true">
+            <div class="ticker-track">
+              <span>СДВИГ <i>✳</i> СИСТЕМА КРАСОТЫ <i>✳</i> СКОРОЧИСТО <i>✳</i> ЧИСТО <i>✳</i> NEXUS CRM <i>✳</i> </span><span>СДВИГ <i>✳</i> СИСТЕМА КРАСОТЫ <i>✳</i> СКОРОЧИСТО <i>✳</i> ЧИСТО <i>✳</i> NEXUS CRM <i>✳</i> </span>
+            </div>
           </div>
+          <a class="hero-cue" href="#work" aria-label="Дальше — работы"><svg class="icon" aria-hidden="true"><use href="#i-down"/></svg></a>
         </div>
       </div>
     </section>
 
-    <section class="work section work--flagship" id="work" aria-labelledby="work-title" data-scene>
+    <!-- ============ 01 WORK ============ -->
+    <section class="section work light-surface" id="work" aria-labelledby="work-title">
       <div class="shell">
-        <div class="section-topline" data-reveal>
-          <p class="section-label"><span>01</span>Избранные работы</p>
-          <div class="section-topline-actions"><p class="section-meta">SELECTED WORK / <span data-year>2026</span></p></div>
-        </div>
-        <div class="section-heading" data-reveal data-scene-enter>
-          <h2 id="work-title"><span class="display-line"><span data-type-line>Четыре проекта.</span></span><span class="display-line"><span data-type-line><em>Четыре характера.</em></span></span></h2>
-          <div class="section-heading-aside"><p>Самостоятельные концепты, а не клиентские заказы. Каждый показывает мой подход к структуре, визуалу и разработке.</p><span class="section-edition" aria-hidden="true">INDEPENDENT WORK <i>↘</i> TH / 01—04</span></div>
+        <div class="section-top" data-reveal>
+          <p class="kicker"><span>01</span>Избранные работы</p>
+          <p class="kicker-meta">Selected work / <span data-year>2026</span></p>
         </div>
 
-        <div class="work-index" data-reveal><p><span class="work-index-dot" aria-hidden="true"></span>Смысл — внутри. Характер — с первого экрана.</p><span aria-hidden="true">ПРОКРУТИТЕ, ЧТОБЫ РАССМОТРЕТЬ <svg class="icon"><use href="#arrow-down"/></svg></span></div>
+        <header class="section-head" data-reveal>
+          <h2 class="display" id="work-title">
+            <span class="mask"><span class="mask-in">Четыре проекта.</span></span>
+            <span class="mask"><span class="mask-in"><em>Четыре характера.</em></span></span>
+          </h2>
+          <p class="head-aside">Самостоятельные концепты, а не клиентские заказы. Каждый показывает мой подход к структуре, визуалу и разработке.</p>
+          <i class="spark" aria-hidden="true">✳</i>
+        </header>
 
         <div class="work-grid">
-          <article class="project-card project-card--sdvig" data-project="sdvig" data-reveal data-scene-enter>
-            <a class="project-visual" href="https://tryhardworking.github.io/sdvig/" target="_blank" rel="noopener" data-project-url data-depth-card>
-              <span class="project-visual-top"><span>01 / FASHION E-COMMERCE</span><svg class="icon" aria-hidden="true"><use href="#arrow-up-right"/></svg></span>
-              <span class="project-serial" aria-hidden="true">01</span>
-              <span class="project-window"><span class="window-bar" aria-hidden="true"><i></i><i></i><i></i><span>sdvig / concept</span></span><img class="project-image" src="assets/images/sdvig.webp" width="1440" height="1000" alt="СДВИГ: лавандовый первый экран магазина одежды с крупной типографикой" loading="lazy" decoding="async"></span>
-              <span class="project-hover-label" aria-hidden="true">Смотреть сайт<svg class="icon" aria-hidden="true"><use href="#arrow-up-right"/></svg></span>
+          <!-- 01 СДВИГ -->
+          <article class="wc wc--sdvig" data-reveal>
+            <span class="wc-ghost" aria-hidden="true" data-parallax="0.12">01</span>
+            <a class="win" href="https://tryhardworking.github.io/sdvig/" target="_blank" rel="noopener" data-proj="sdvig">
+              <span class="win-bar" aria-hidden="true"><i></i><i></i><i></i><em>sdvig / concept</em></span>
+              <span class="win-view"><img src="assets/images/sdvig.webp" width="1440" height="1000" alt="СДВИГ: лавандовый первый экран магазина одежды с крупной типографикой" loading="lazy" decoding="async" data-parallax-img="0.06"></span>
+              <span class="win-label">Смотреть сайт<svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></span>
             </a>
-            <div class="project-heading"><h3>СДВИГ <span class="project-title-detail">shop</span></h3><span class="project-year">2026</span></div>
-            <p class="project-description">Магазин одежды с характером. От каталога и фильтров до демонстрационного оформления заказа.</p>
-            <div class="project-tags"><span>UX / UI</span><span>Frontend</span><span>Вымышленный бренд</span></div>
-            <div class="project-actions"><button class="case-button" type="button" data-case-open aria-haspopup="dialog" aria-controls="project-dialog" aria-label="Подробнее о проекте СДВИГ" hidden>О проекте<svg class="icon" aria-hidden="true"><use href="#plus"/></svg></button><a class="project-site-link" href="https://tryhardworking.github.io/sdvig/" target="_blank" rel="noopener">Открыть сайт<svg class="icon" aria-hidden="true"><use href="#arrow-up-right"/></svg></a></div>
-            <template data-case-template>
-              <div class="case-intro"><p class="case-kind">Интерактивный концепт · Fashion e-commerce</p><p>Магазин вымышленной марки одежды: каталог с фильтрами, варианты и размеры, избранное, готовые образы, корзина и полный демонстрационный путь до заказа.</p></div>
-              <dl class="case-facts"><div><dt>Задача</dt><dd>Собрать понятный путь от выбора вещи до заказа.</dd></div><div><dt>Решение</dt><dd>Выразительная типографика и визуальная система, каталог с фильтрами, карточки товаров, избранное и демонстрационная корзина.</dd></div><div><dt>Сделано</dt><dd>UX · арт-дирекшн · frontend</dd></div></dl>
-              <p class="case-disclaimer">СДВИГ — вымышленный бренд. Проект демонстрирует интерфейс магазина, а не приём реальных покупок.</p>
-            </template>
+            <div class="wc-body">
+              <p class="wc-cat">Fashion e-commerce<span class="wc-year">2026</span></p>
+              <h3>СДВИГ <em class="wc-note">shop</em></h3>
+              <p class="wc-desc">Магазин одежды с характером. От каталога и фильтров до демонстрационного оформления заказа.</p>
+              <ul class="wc-feats" data-stagger>
+                <li>Каталог с фильтрами и размерами</li>
+                <li>Избранное и готовые образы</li>
+                <li>Корзина и демо-оформление заказа</li>
+              </ul>
+              <p class="wc-tags"><span>UX / UI</span><span>Frontend</span><span>Вымышленный бренд</span></p>
+              <a class="line-link" href="https://tryhardworking.github.io/sdvig/" target="_blank" rel="noopener" data-proj="sdvig">Открыть сайт<svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            </div>
           </article>
 
-          <article class="project-card project-card--beauty" data-project="beauty" data-reveal data-scene-enter>
-            <a class="project-visual" href="https://tryhardworking.github.io/sistema-krasoti/" target="_blank" rel="noopener" data-project-url data-depth-card>
-              <span class="project-visual-top"><span>02 / BEAUTY &amp; MEDICAL</span><svg class="icon" aria-hidden="true"><use href="#arrow-up-right"/></svg></span>
-              <span class="project-serial" aria-hidden="true">02</span>
-              <span class="project-window"><span class="window-bar" aria-hidden="true"><i></i><i></i><i></i><span>sistema-krasoti / concept</span></span><img class="project-image" src="assets/images/sistema-krasoti.webp" width="1200" height="833" alt="Система Красоты: спокойный светлый сайт косметологии в зелёных тонах" loading="lazy" decoding="async"></span>
-              <span class="project-hover-label" aria-hidden="true">Смотреть сайт<svg class="icon" aria-hidden="true"><use href="#arrow-up-right"/></svg></span>
+          <!-- 02 Система Красоты -->
+          <article class="wc wc--beauty" data-reveal>
+            <span class="wc-ghost" aria-hidden="true" data-parallax="0.12">02</span>
+            <a class="win" href="https://tryhardworking.github.io/sistema-krasoti/" target="_blank" rel="noopener" data-proj="beauty">
+              <span class="win-bar" aria-hidden="true"><i></i><i></i><i></i><em>sistema-krasoti / concept</em></span>
+              <span class="win-view"><img src="assets/images/sistema-krasoti.webp" width="1200" height="833" alt="Система Красоты: спокойный светлый сайт косметологии в зелёных тонах" loading="lazy" decoding="async" data-parallax-img="0.06"></span>
+              <span class="win-label">Смотреть сайт<svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></span>
             </a>
-            <div class="project-heading"><h3>Система Красоты</h3><span class="project-year">2026</span></div>
-            <p class="project-description">Спокойный визуал для косметологии. Понятный выбор направления, прайс и переход к записи.</p>
-            <div class="project-tags"><span>Web design</span><span>Адаптив</span><span>Неофициальный концепт</span></div>
-            <div class="project-actions"><button class="case-button" type="button" data-case-open aria-haspopup="dialog" aria-controls="project-dialog" aria-label="Подробнее о проекте Система Красоты" hidden>О проекте<svg class="icon" aria-hidden="true"><use href="#plus"/></svg></button><a class="project-site-link" href="https://tryhardworking.github.io/sistema-krasoti/" target="_blank" rel="noopener">Открыть сайт<svg class="icon" aria-hidden="true"><use href="#arrow-up-right"/></svg></a></div>
-            <template data-case-template>
-              <div class="case-intro"><p class="case-kind">Дизайн-концепция · Beauty &amp; medical</p><p>Концепция сайта центра косметологии: выбор направления по задаче, понятный прайс, команда специалистов и переход к онлайн-записи.</p></div>
-              <dl class="case-facts"><div><dt>Задача</dt><dd>Переосмыслить структуру и визуальную подачу сайта центра косметологии.</dd></div><div><dt>Решение</dt><dd>Спокойная палитра, навигация по задачам посетителя, понятная стоимость и последовательный путь к записи.</dd></div><div><dt>Сделано</dt><dd>Дизайн · адаптив · код</dd></div></dl>
-              <p class="case-disclaimer">Неофициальная дизайн-концепция. Не подтверждает сотрудничество с компанией. Контакты внутри проекта ведут к соответствующей организации.</p>
-            </template>
+            <div class="wc-body">
+              <p class="wc-cat">Beauty & medical<span class="wc-year">2026</span></p>
+              <h3>Система Красоты</h3>
+              <p class="wc-desc">Спокойный визуал для косметологии. Понятный выбор направления, прайс и переход к записи.</p>
+              <ul class="wc-feats" data-stagger>
+                <li>Навигация по задачам посетителя</li>
+                <li>Понятный прайс и направления</li>
+                <li>Команда и путь к онлайн-записи</li>
+              </ul>
+              <p class="wc-tags"><span>Web design</span><span>Адаптив</span><span>Неофициальный концепт</span></p>
+              <a class="line-link" href="https://tryhardworking.github.io/sistema-krasoti/" target="_blank" rel="noopener" data-proj="beauty">Открыть сайт<svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            </div>
           </article>
 
-          <article class="project-card project-card--skoro" data-project="skoro" data-reveal data-scene-enter>
-            <a class="project-visual" href="https://tryhardworking.github.io/skorochisto/" target="_blank" rel="noopener" data-project-url data-depth-card>
-              <span class="project-visual-top"><span>03 / LOCAL SERVICE</span><svg class="icon" aria-hidden="true"><use href="#arrow-up-right"/></svg></span>
-              <span class="project-serial" aria-hidden="true">03</span>
-              <span class="project-window"><span class="window-bar" aria-hidden="true"><i></i><i></i><i></i><span>skorochisto / concept</span></span><img class="project-image" src="assets/images/skorochisto.webp" width="1200" height="833" alt="СкороЧисто: яркий сине-жёлтый сайт выездной химчистки" loading="lazy" decoding="async"></span>
-              <span class="project-hover-label" aria-hidden="true">Смотреть сайт<svg class="icon" aria-hidden="true"><use href="#arrow-up-right"/></svg></span>
+          <!-- 03 СкороЧисто -->
+          <article class="wc wc--skoro" data-reveal>
+            <span class="wc-ghost" aria-hidden="true" data-parallax="0.12">03</span>
+            <a class="win win--wide" href="https://tryhardworking.github.io/skorochisto/" target="_blank" rel="noopener" data-proj="skoro">
+              <span class="win-bar" aria-hidden="true"><i></i><i></i><i></i><em>skorochisto / concept</em></span>
+              <span class="win-view"><img src="assets/images/skorochisto.webp" width="1200" height="833" alt="СкороЧисто: яркий сине-жёлтый сайт выездной химчистки" loading="lazy" decoding="async" data-parallax-img="0.05"></span>
+              <span class="win-label">Смотреть сайт<svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></span>
             </a>
-            <div class="project-heading"><h3>СкороЧисто<span class="project-title-dot">.</span></h3><span class="project-year">2026</span></div>
-            <p class="project-description">Локальный сервис без лишних шагов. Яркая подача, цены на виду и звонок в один тап.</p>
-            <div class="project-tags"><span>Структура</span><span>Web design</span><span>Неофициальный концепт</span></div>
-            <div class="project-actions"><button class="case-button" type="button" data-case-open aria-haspopup="dialog" aria-controls="project-dialog" aria-label="Подробнее о проекте СкороЧисто" hidden>О проекте<svg class="icon" aria-hidden="true"><use href="#plus"/></svg></button><a class="project-site-link" href="https://tryhardworking.github.io/skorochisto/" target="_blank" rel="noopener">Открыть сайт<svg class="icon" aria-hidden="true"><use href="#arrow-up-right"/></svg></a></div>
-            <template data-case-template>
-              <div class="case-intro"><p class="case-kind">Дизайн-концепция · Local service</p><p>Яркий утилитарный сайт для выездной химчистки: цены сразу на виду, отзывы, контакты и звонок в один тап.</p></div>
-              <dl class="case-facts"><div><dt>Задача</dt><dd>Упростить путь посетителя к звонку и выбору услуги.</dd></div><div><dt>Решение</dt><dd>Контрастная сине-жёлтая система, заметные действия, открытая подача цен и адаптивная структура главной страницы и прайса.</dd></div><div><dt>Сделано</dt><dd>Структура · дизайн · код</dd></div></dl>
-              <p class="case-disclaimer">Неофициальная дизайн-концепция. Не подтверждает сотрудничество с компанией. Контакты внутри проекта ведут к соответствующей организации.</p>
-            </template>
+            <div class="wc-strip">
+              <div class="wc-body wc-body--inline">
+                <p class="wc-cat">Local service<span class="wc-year">2026</span></p>
+                <h3>СкороЧисто<i class="wc-dot">.</i></h3>
+              </div>
+              <div class="wc-body wc-body--inline">
+                <p class="wc-desc">Локальный сервис без лишних шагов. Яркая подача, цены на виду и звонок в один тап.</p>
+                <p class="wc-tags"><span>Структура</span><span>Web design</span><span>Неофициальный концепт</span></p>
+                <a class="line-link" href="https://tryhardworking.github.io/skorochisto/" target="_blank" rel="noopener" data-proj="skoro">Открыть сайт<svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+              </div>
+            </div>
           </article>
 
-          <article class="project-card project-card--chisto" data-project="chisto" data-reveal data-scene-enter>
-            <a class="project-visual" href="https://tryhardworking.github.io/chisto/" target="_blank" rel="noopener" data-project-url data-depth-card>
-              <span class="project-visual-top"><span>04 / PREMIUM SERVICE</span><svg class="icon" aria-hidden="true"><use href="#arrow-up-right"/></svg></span>
-              <span class="project-serial" aria-hidden="true">04</span>
-              <span class="project-window"><span class="window-bar" aria-hidden="true"><i></i><i></i><i></i><span>chisto / concept</span></span><img class="project-image" src="assets/images/chisto.webp" width="1200" height="833" alt="ЧИСТО: светлый премиальный сайт ухода за вещами с тёмно-зелёной типографикой" loading="lazy" decoding="async"></span>
-              <span class="project-hover-label" aria-hidden="true">Смотреть сайт<svg class="icon" aria-hidden="true"><use href="#arrow-up-right"/></svg></span>
+          <!-- 04 ЧИСТО -->
+          <article class="wc wc--chisto" data-reveal>
+            <span class="wc-ghost" aria-hidden="true" data-parallax="0.12">04</span>
+            <a class="win" href="https://tryhardworking.github.io/chisto/" target="_blank" rel="noopener" data-proj="chisto">
+              <span class="win-bar" aria-hidden="true"><i></i><i></i><i></i><em>chisto / concept</em></span>
+              <span class="win-view"><img src="assets/images/chisto.webp" width="1200" height="833" alt="ЧИСТО: светлый премиальный сайт ухода за вещами с тёмно-зелёной типографикой" loading="lazy" decoding="async" data-parallax-img="0.06"></span>
+              <span class="win-label">Смотреть сайт<svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></span>
             </a>
-            <div class="project-heading"><h3>ЧИСТО<span class="project-title-dot">.</span></h3><span class="project-year">2026</span></div>
-            <p class="project-description">Внимание к вещам — внимание к деталям. Премиальный сервис с каталогом и интерактивным расчётом.</p>
-            <div class="project-tags"><span>UX / UI</span><span>Frontend</span><span>Вымышленный бренд</span></div>
-            <div class="project-actions"><button class="case-button" type="button" data-case-open aria-haspopup="dialog" aria-controls="project-dialog" aria-label="Подробнее о проекте ЧИСТО" hidden>О проекте<svg class="icon" aria-hidden="true"><use href="#plus"/></svg></button><a class="project-site-link" href="https://tryhardworking.github.io/chisto/" target="_blank" rel="noopener">Открыть сайт<svg class="icon" aria-hidden="true"><use href="#arrow-up-right"/></svg></a></div>
-            <template data-case-template>
-              <div class="case-intro"><p class="case-kind">Вымышленный бренд · Premium service</p><p>Развёрнутая концепция премиального сервиса по уходу за вещами: каталог услуг, интерактивный расчёт и подробная демонстрационная форма.</p></div>
-              <dl class="case-facts"><div><dt>Задача</dt><dd>Передать ощущение заботы и качества через структуру и интерфейс.</dd></div><div><dt>Решение</dt><dd>Сдержанная визуальная система, каталог услуг, интерактивный расчёт и демонстрационный сценарий оформления заявки.</dd></div><div><dt>Сделано</dt><dd>UX · визуал · frontend</dd></div></dl>
-              <p class="case-disclaimer">ЧИСТО — вымышленный бренд. Портфолио показывает концепцию сервиса, а не подтверждённый клиентский заказ.</p>
-            </template>
+            <div class="wc-body">
+              <p class="wc-cat">Premium service<span class="wc-year">2026</span></p>
+              <h3>ЧИСТО<i class="wc-dot">.</i></h3>
+              <p class="wc-desc">Внимание к вещам — внимание к деталям. Премиальный сервис с каталогом и интерактивным расчётом.</p>
+              <ul class="wc-feats" data-stagger>
+                <li>Каталог услуг ухода</li>
+                <li>Интерактивный расчёт стоимости</li>
+                <li>Демонстрационная форма заявки</li>
+              </ul>
+              <p class="wc-tags"><span>UX / UI</span><span>Frontend</span><span>Вымышленный бренд</span></p>
+              <a class="line-link" href="https://tryhardworking.github.io/chisto/" target="_blank" rel="noopener" data-proj="chisto">Открыть сайт<svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            </div>
           </article>
+
+          <aside class="wc-quote" data-reveal>
+            <p><em>Смысл — внутри.<br>Характер — с первого экрана.</em></p>
+            <span class="wc-quote-mark" aria-hidden="true">↳</span>
+          </aside>
         </div>
 
-        <details class="concept-note" data-reveal><summary>О статусе проектов<svg class="icon" aria-hidden="true"><use href="#plus"/></svg></summary><p>«СДВИГ» и «ЧИСТО» — вымышленные бренды. «СкороЧисто» и «Система Красоты» — неофициальные концепции и не подтверждают сотрудничество с компаниями. Контакты внутри последних двух проектов ведут к соответствующим организациям.</p></details>
+        <details class="status-note" data-reveal>
+          <summary>О статусе проектов<svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg></summary>
+          <p>«СДВИГ» и «ЧИСТО» — вымышленные бренды. «СкороЧисто» и «Система Красоты» — неофициальные концепции и не подтверждают сотрудничество с компаниями. Контакты внутри последних двух проектов ведут к соответствующим организациям.</p>
+        </details>
       </div>
     </section>
 
-    <section class="approach section approach--flagship" id="approach" aria-labelledby="approach-title" data-scene>
+    <!-- ============ 02 NEXUS CRM ============ -->
+    <section class="section nexus dark-surface" id="nexus" aria-labelledby="nexus-title" data-lit>
+      <div class="glow-spots" aria-hidden="true"><i class="gs gs--a"></i><i class="gs gs--b"></i><i class="gs gs--c"></i></div>
       <div class="shell">
-        <div class="section-topline" data-reveal><p class="section-label"><span>02</span>Личный подход</p><div class="section-topline-actions"><p class="section-meta">THE PERSON BEHIND THE PIXELS</p></div></div>
-        <div class="approach-grid">
-          <figure class="portrait portrait--about" data-portrait-slot="about" data-reveal data-scene-enter>
-            <div class="about-photo-frame" data-depth-card>
-              <div class="portrait-canvas">
-                <div class="portrait-placeholder about-photo-fallback" data-portrait-placeholder><span aria-hidden="true">TH / 02</span><p>Портрет TRY/HARD</p><span>Фотография временно недоступна</span></div>
-                <img class="portrait-photo" src="assets/images/portrait-about.webp" width="1024" height="1536" alt="Автор TRY/HARD — за кадром" loading="lazy" decoding="async">
-                <div class="about-photo-details" aria-hidden="true"><span>TRY / HARD</span><span>THE PERSONAL SIDE — 02</span><i class="about-photo-corner about-photo-corner--top"></i><i class="about-photo-corner about-photo-corner--bottom"></i></div>
-              </div>
-              <div class="about-orbit" aria-hidden="true"><svg class="about-orbit-type" viewBox="0 0 100 100"><defs><path id="about-orbit-path" d="M50,50 m-38,0 a38,38 0 1,1 76,0 a38,38 0 1,1 -76,0"/></defs><text><textPath href="#about-orbit-path" textLength="235">ONE AUTHOR · DESIGN &amp; CODE · TRY / HARD · </textPath></text></svg><span>TH<span>/</span></span></div>
-            </div>
-            <figcaption><span><i aria-hidden="true"></i>02 — За кадром</span><span>НЕ БЕЗЛИКАЯ СТУДИЯ</span></figcaption>
+        <div class="section-top" data-reveal>
+          <p class="kicker kicker--light"><span>02</span>Отдельный кейс</p>
+          <p class="kicker-meta kicker-meta--light">CRM interface / product UI</p>
+        </div>
+
+        <header class="section-head" data-reveal>
+          <h2 class="display" id="nexus-title">
+            <span class="mask"><span class="mask-in">NEXUS&nbsp;CRM.</span></span>
+            <span class="mask"><span class="mask-in"><em>Интерфейс, который работает.</em></span></span>
+          </h2>
+          <p class="head-aside">Полноценная CRM-система: восемь разделов, живые данные, графики и канбан. Не макет — рабочий интерфейс, которым пользуются каждый день.</p>
+          <i class="spark" aria-hidden="true">✳</i>
+        </header>
+
+        <div class="nexus-stage" data-reveal>
+          <figure class="win win--main nx-main">
+            <span class="win-bar win-bar--dark" aria-hidden="true"><i></i><i></i><i></i><em>nexus-crm / #/ — обзор</em></span>
+            <span class="win-view"><img src="assets/images/nexus-home.jpg" width="1440" height="1000" alt="NEXUS CRM: обзорный экран с показателями KPI и графиком выручки" loading="lazy" decoding="async" data-parallax-img="0.05"></span>
           </figure>
-          <div class="approach-copy" data-reveal data-scene-enter>
-            <p class="eyebrow"><span aria-hidden="true">↳</span>Дизайн — не декорация</p>
-            <h2 id="approach-title"><span class="display-line"><span data-type-line>От смысла —</span></span><span class="display-line"><span data-type-line><em>к форме.</em></span></span></h2>
-            <p class="approach-lead">Я — TRY/HARD. Работаю на стыке дизайна и кода, чтобы идея не терялась между красивым макетом и готовым сайтом.</p>
-            <p class="approach-description">Начинаю с того, что посетителю нужно понять и сделать. Затем собираю визуальную систему и адаптивную версию — с вниманием к ритму, деталям и удобству.</p>
-            <a class="underlined-link" href="#process">Как это устроено<svg class="icon" aria-hidden="true"><use href="#arrow-right"/></svg></a>
-            <div class="about-signature" aria-hidden="true"><span>try<span>/</span>hard.</span><p>ОДИН АВТОР.<br>ПОЛНЫЙ ЦИКЛ.</p></div>
+          <figure class="win win--float nx-tasks" data-parallax="0.12">
+            <span class="win-bar win-bar--dark" aria-hidden="true"><i></i><i></i><i></i><em>#/tasks — канбан</em></span>
+            <span class="win-view"><img src="assets/images/nexus-tasks.jpg" width="1440" height="1000" alt="NEXUS CRM: канбан-доска задач по колонкам статусов" loading="lazy" decoding="async"></span>
+          </figure>
+          <figure class="win win--float nx-finance" data-parallax="0.08">
+            <span class="win-bar win-bar--dark" aria-hidden="true"><i></i><i></i><i></i><em>#/finance — баланс</em></span>
+            <span class="win-view"><img src="assets/images/nexus-finance.jpg" width="1440" height="1000" alt="NEXUS CRM: раздел финансов с балансом и платежами" loading="lazy" decoding="async"></span>
+          </figure>
+          <span class="nexus-glow" aria-hidden="true"></span>
+        </div>
+
+        <div class="nexus-stats" data-reveal data-stagger>
+          <div class="stat"><strong data-count="8">0</strong><span>разделов<br>интерфейса</span></div>
+          <div class="stat"><strong data-count="12">0</strong><span>проектов<br>в системе</span></div>
+          <div class="stat"><strong data-count="10">0</strong><span>клиентов<br>с историей</span></div>
+          <div class="stat"><strong data-count="17">0</strong><span>задач<br>на канбане</span></div>
+        </div>
+
+        <div class="nexus-grid">
+          <div class="nexus-facts" data-reveal>
+            <dl>
+              <div><dt>Задача</dt><dd>Спроектировать и собрать рабочий интерфейс CRM: от структуры данных до экранов, которыми можно пользоваться каждый день.</dd></div>
+              <div><dt>Решение</dt><dd>Модульная архитектура на ES-модулях, hash-роутинг, собственные SVG-графики без библиотек и единая визуальная система.</dd></div>
+              <div><dt>Сделано</dt><dd>UX · интерфейс · frontend-архитектура</dd></div>
+            </dl>
+            <a class="btn btn--accent" href="../nexus-crm/" target="_blank" rel="noopener" data-nexus-link data-magnetic><span>Открыть NEXUS CRM</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </div>
+          <ul class="nexus-modules" data-reveal data-stagger>
+            <li><span>01</span>Обзор<i>KPI, выручка, активность</i></li>
+            <li><span>02</span>Аналитика<i>графики и срезы</i></li>
+            <li><span>03</span>Проекты<i>статусы и прогресс</i></li>
+            <li><span>04</span>Клиенты<i>карточки и история</i></li>
+            <li><span>05</span>Финансы<i>платежи и баланс</i></li>
+            <li><span>06</span>Задачи<i>канбан-доска</i></li>
+            <li><span>07</span>Календарь<i>события и дедлайны</i></li>
+            <li><span>08</span>Настройки<i>данные и вид</i></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 03 ABOUT ============ -->
+    <section class="section about light-surface" id="about" aria-labelledby="about-title">
+      <div class="shell">
+        <div class="section-top" data-reveal>
+          <p class="kicker"><span>03</span>Обо мне</p>
+          <p class="kicker-meta">The person behind the pixels</p>
+        </div>
+        <div class="about-grid">
+          <figure class="about-portrait" data-reveal>
+            <div class="frame frame--about" data-parallax="0.06">
+              <span class="frame-corner frame-corner--tl" aria-hidden="true"></span>
+              <span class="frame-corner frame-corner--br" aria-hidden="true"></span>
+              <img src="assets/images/portrait-about.webp" width="1024" height="1536" alt="Автор TRY/HARD — за кадром" loading="lazy" decoding="async">
+              <span class="stamp stamp--about" aria-hidden="true">
+                <svg viewBox="0 0 100 100"><defs><path id="stamp-about" d="M50,50 m-37,0 a37,37 0 1,1 74,0 a37,37 0 1,1 -74,0"/></defs><text><textPath href="#stamp-about" textLength="232">ONE AUTHOR · DESIGN & CODE · TRY / HARD · </textPath></text></svg>
+                <em>TH<span>/</span></em>
+              </span>
+            </div>
+            <figcaption><span><i aria-hidden="true"></i>За кадром</span><span>TH&nbsp;/&nbsp;02</span></figcaption>
+          </figure>
+          <div class="about-copy" data-reveal>
+            <h2 class="display display--sm" id="about-title">
+              <span class="mask"><span class="mask-in">От смысла —</span></span>
+              <span class="mask"><span class="mask-in"><em>к форме.</em></span></span>
+            </h2>
+            <p class="about-lead">Я — TRY/HARD. Работаю на стыке дизайна и кода, чтобы идея не терялась между красивым макетом и готовым сайтом.</p>
+            <p class="about-text">Начинаю с того, что посетителю нужно понять и сделать. Затем собираю визуальную систему и адаптивную версию — с вниманием к ритму, деталям и удобству. Не беру шаблоны: каждый проект начинается с вопроса «что здесь должно работать».</p>
+            <ul class="about-facts" data-stagger>
+              <li><strong>01</strong><span>Дизайн и код делает один человек</span></li>
+              <li><strong>05</strong><span>опубликованных работ</span></li>
+              <li><strong>0</strong><span>шаблонных решений</span></li>
+            </ul>
+            <p class="about-signature" aria-hidden="true">try<span>/</span>hard.</p>
           </div>
         </div>
-        <div class="expertise-grid">
-          <article class="expertise-card" data-reveal data-scene-enter>
-            <div class="expertise-top"><span>01 / THINK</span><span>TH / CRAFT</span></div>
-            <div class="expertise-visual expertise-visual--structure" aria-hidden="true">
-              <span class="expertise-visual-grid"></span>
-              <div class="craft-scene-heading"><span>Схема страницы</span><span>01</span></div>
-              <div class="structure-map">
-                <div class="structure-node structure-node--hero craft-motion"><span>Первый экран</span><div class="structure-wireframe"><span><i></i><i></i></span><i></i></div></div>
-                <span class="structure-connector"><i class="structure-signal craft-motion"></i></span>
-                <div class="structure-branches">
-                  <div class="structure-node structure-node--content craft-motion"><span>Контент</span><span class="craft-lines"><i></i><i></i></span></div>
-                  <div class="structure-node structure-node--action craft-motion"><span>Действие <svg class="icon"><use href="#arrow-up-right"/></svg></span><span class="structure-action-line"></span></div>
-                </div>
-              </div>
-              <div class="craft-scene-caption"><span>Логика → цель</span><span class="craft-caption-mark">↳</span></div>
-            </div>
-            <h3>Структура</h3><p>Логика страницы, понятная навигация и правильные акценты. Сначала — смысл.</p>
+      </div>
+    </section>
+
+    <!-- ============ 04 APPROACH ============ -->
+    <section class="section approach alt-surface" id="approach" aria-labelledby="approach-title">
+      <div class="shell">
+        <div class="section-top" data-reveal>
+          <p class="kicker"><span>04</span>Подход</p>
+          <p class="kicker-meta">Think / Design / Build</p>
+        </div>
+        <header class="section-head" data-reveal>
+          <h2 class="display" id="approach-title">
+            <span class="mask"><span class="mask-in">Три шага.</span></span>
+            <span class="mask"><span class="mask-in"><em>Один результат.</em></span></span>
+          </h2>
+          <i class="spark" aria-hidden="true">✳</i>
+        </header>
+
+        <div class="ap-rows" data-stagger>
+          <article class="ap-row">
+            <span class="ap-num" aria-hidden="true">01</span>
+            <div class="ap-word"><h3>Think</h3><p class="ap-sub">структура</p></div>
+            <p class="ap-desc">Логика страницы, понятная навигация и правильные акценты. Сначала — смысл, потом — форма.</p>
+            <svg class="icon ap-arrow" aria-hidden="true"><use href="#i-right"/></svg>
           </article>
-          <article class="expertise-card" data-reveal data-scene-enter>
-            <div class="expertise-top"><span>02 / DESIGN</span><span>TH / CRAFT</span></div>
-            <div class="expertise-visual expertise-visual--design" aria-hidden="true">
-              <span class="expertise-visual-grid"></span>
-              <div class="craft-scene-heading"><span>Визуальный язык</span><span>02</span></div>
-              <div class="design-artboard">
-                <span class="design-guide design-guide--vertical"></span><span class="design-guide design-guide--horizontal"></span>
-                <div class="design-type"><span>A<em>a</em></span><small>Manrope / Lora</small></div>
-                <div class="design-layers"><span class="design-layer design-layer--back craft-motion"></span><span class="design-layer design-layer--middle craft-motion"></span><span class="design-layer design-layer--front craft-motion"><i></i><i></i><span>TH<span>/</span></span></span></div>
-              </div>
-              <div class="craft-scene-caption"><span>Ритм. Цвет. Форма.</span><span class="design-palette"><i></i><i></i><i></i></span></div>
-            </div>
-            <h3>Визуальная система</h3><p>Типографика, цвет и подача, которые работают вместе, а не спорят за внимание.</p>
+          <article class="ap-row">
+            <span class="ap-num" aria-hidden="true">02</span>
+            <div class="ap-word"><h3>Design</h3><p class="ap-sub">визуальная система</p></div>
+            <p class="ap-desc">Типографика, цвет и подача, которые работают вместе, а не спорят за внимание.</p>
+            <svg class="icon ap-arrow" aria-hidden="true"><use href="#i-right"/></svg>
           </article>
-          <article class="expertise-card" data-reveal data-scene-enter>
-            <div class="expertise-top"><span>03 / BUILD</span><span>TH / CRAFT</span></div>
-            <div class="expertise-visual expertise-visual--build" aria-hidden="true">
-              <span class="expertise-visual-grid"></span>
-              <div class="craft-scene-heading"><span>Из макета — в код</span><span>03</span></div>
-              <div class="build-stage">
-                <div class="build-browser craft-motion"><div class="build-browser-bar"><span><i></i><i></i><i></i></span><span>index.html</span><svg class="icon"><use href="#code"/></svg></div><div class="build-code"><span><i>01</i><code>&lt;<b>main</b>&gt;</code></span><span><i>02</i><code> &lt;<b>h1</b>&gt;Смысл.&lt;/<b>h1</b>&gt;</code></span><span><i>03</i><code> &lt;<b>section</b> /&gt;<span class="build-cursor craft-motion">▏</span></code></span><span><i>04</i><code>&lt;/<b>main</b>&gt;</code></span></div></div>
-                <div class="build-phone craft-motion"><span class="build-phone-speaker"></span><div class="build-phone-page"><span>TH/</span><i></i><span class="craft-lines"><i></i><i></i></span><span class="build-phone-button"></span></div><span class="build-phone-home"></span></div>
-              </div>
-              <div class="craft-scene-caption"><span>На любом экране</span><span class="build-status"><i class="craft-motion"></i>Готово</span></div>
-            </div>
-            <h3>Рабочий сайт</h3><p>Адаптивная вёрстка и понятные взаимодействия. На большом экране и в руке.</p>
+          <article class="ap-row">
+            <span class="ap-num" aria-hidden="true">03</span>
+            <div class="ap-word"><h3>Build</h3><p class="ap-sub">рабочий сайт</p></div>
+            <p class="ap-desc">Адаптивная вёрстка и понятные взаимодействия. На большом экране и в руке.</p>
+            <svg class="icon ap-arrow" aria-hidden="true"><use href="#i-right"/></svg>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="process section process--flagship" id="process" aria-labelledby="process-title" data-scene>
+    <!-- ============ 05 PROCESS ============ -->
+    <section class="section process light-surface" id="process" aria-labelledby="process-title">
       <div class="shell">
-        <div class="section-topline" data-reveal><p class="section-label"><span>03</span>Этапы работы</p><div class="section-topline-actions"><p class="section-meta">FROM IDEA TO LAUNCH</p></div></div>
+        <div class="section-top" data-reveal>
+          <p class="kicker"><span>05</span>Этапы работы</p>
+          <p class="kicker-meta">From idea to launch</p>
+        </div>
         <div class="process-grid">
-          <div class="process-intro" data-reveal data-scene-enter><h2 id="process-title"><span class="display-line"><span data-type-line>Без тумана.</span></span><span class="display-line"><span data-type-line><em>По шагам.</em></span></span></h2><p>Сначала договоримся о направлении. Потом — дизайн, код и проверка. На каждом этапе понятно, что происходит дальше.</p><a class="underlined-link" href="#contact">Обсудить вашу задачу<svg class="icon" aria-hidden="true"><use href="#arrow-up-right"/></svg></a><div class="process-map" aria-hidden="true" data-process-map hidden><span class="process-map-label">ЯСНОСТЬ НА КАЖДОМ ЭТАПЕ</span><div><span class="process-map-number" data-process-number>01</span><span class="process-map-total">/ 04</span><svg class="icon"><use href="#arrow-up-right"/></svg></div><span class="process-progress"><span data-process-progress></span></span></div></div>
-          <div class="process-steps" data-reveal data-scene-enter>
-            <details class="process-step" name="work-process" open><summary><span class="step-number">01</span><h3>Разбираемся в задаче</h3><span class="step-toggle"><svg class="icon" aria-hidden="true"><use href="#plus"/></svg></span></summary><div class="step-body"><p>Что показываем, кому и зачем. Изучаем материалы, расставляем приоритеты и определяем действие, которое ждём от посетителя.</p><span>Результат: понятная структура и объём работы.</span></div></details>
-            <details class="process-step" name="work-process"><summary><span class="step-number">02</span><h3>Выбираем направление</h3><span class="step-toggle"><svg class="icon" aria-hidden="true"><use href="#plus"/></svg></span></summary><div class="step-body"><p>Собираем типографику, палитру и подачу первого экрана. Согласуем визуальный характер до того, как переходить к полной сборке.</p><span>Результат: согласованная визуальная система.</span></div></details>
-            <details class="process-step" name="work-process"><summary><span class="step-number">03</span><h3>Собираем сайт</h3><span class="step-toggle"><svg class="icon" aria-hidden="true"><use href="#plus"/></svg></span></summary><div class="step-body"><p>Переносим идею в адаптивную вёрстку. Добавляем реальные материалы, переходы и интерактивные состояния — без потери смысла и деталей.</p><span>Результат: рабочая версия для просмотра.</span></div></details>
-            <details class="process-step" name="work-process"><summary><span class="step-number">04</span><h3>Проверяем и запускаем</h3><span class="step-toggle"><svg class="icon" aria-hidden="true"><use href="#plus"/></svg></span></summary><div class="step-body"><p>Проверяем мобильную версию, ссылки и основные сценарии. Вносим финальные правки. Публикуем только после вашего согласования.</p><span>Результат: готовые файлы и опубликованная ссылка.</span></div></details>
+          <header class="process-intro" data-reveal>
+            <h2 class="display display--sm" id="process-title">
+              <span class="mask"><span class="mask-in">Без тумана.</span></span>
+              <span class="mask"><span class="mask-in"><em>По шагам.</em></span></span>
+            </h2>
+            <p>Сначала договоримся о направлении. Потом — дизайн, код и проверка. На каждом этапе понятно, что происходит дальше.</p>
+            <a class="line-link" href="#contact">Обсудить вашу задачу<svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </header>
+
+          <div class="steps" data-stagger>
+            <div class="step is-open">
+              <button class="step-head" type="button" aria-expanded="true">
+                <span class="step-num">01</span>
+                <h3>Разбираемся в задаче</h3>
+                <span class="step-mark" aria-hidden="true"><svg class="icon"><use href="#i-plus"/></svg></span>
+              </button>
+              <div class="step-panel"><div class="step-panel-in"><p>Что показываем, кому и зачем. Изучаем материалы, расставляем приоритеты и определяем действие, которое ждём от посетителя.</p><em>Результат: понятная структура и объём работы.</em></div></div>
+            </div>
+            <div class="step">
+              <button class="step-head" type="button" aria-expanded="false">
+                <span class="step-num">02</span>
+                <h3>Выбираем направление</h3>
+                <span class="step-mark" aria-hidden="true"><svg class="icon"><use href="#i-plus"/></svg></span>
+              </button>
+              <div class="step-panel"><div class="step-panel-in"><p>Собираем типографику, палитру и подачу первого экрана. Согласуем визуальный характер до того, как переходить к полной сборке.</p><em>Результат: согласованная визуальная система.</em></div></div>
+            </div>
+            <div class="step">
+              <button class="step-head" type="button" aria-expanded="false">
+                <span class="step-num">03</span>
+                <h3>Собираем сайт</h3>
+                <span class="step-mark" aria-hidden="true"><svg class="icon"><use href="#i-plus"/></svg></span>
+              </button>
+              <div class="step-panel"><div class="step-panel-in"><p>Переносим идею в адаптивную вёрстку. Добавляем реальные материалы, переходы и интерактивные состояния — без потери смысла и деталей.</p><em>Результат: рабочая версия для просмотра.</em></div></div>
+            </div>
+            <div class="step">
+              <button class="step-head" type="button" aria-expanded="false">
+                <span class="step-num">04</span>
+                <h3>Проверяем и запускаем</h3>
+                <span class="step-mark" aria-hidden="true"><svg class="icon"><use href="#i-plus"/></svg></span>
+              </button>
+              <div class="step-panel"><div class="step-panel-in"><p>Проверяем мобильную версию, ссылки и основные сценарии. Вносим финальные правки. Публикуем только после вашего согласования.</p><em>Результат: готовые файлы и опубликованная ссылка.</em></div></div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="contact dark-surface contact--flagship" id="contact" aria-labelledby="contact-title" data-scene>
-      <div class="contact-atmosphere" aria-hidden="true"></div><div class="contact-light" aria-hidden="true"></div>
-      <svg class="contact-trajectory" viewBox="0 0 1440 850" preserveAspectRatio="none" aria-hidden="true"><path d="M-50 740C250 330 750 860 1510 55"/><path d="M-50 760C250 350 750 880 1510 75"/></svg>
+    <!-- ============ 06 CONTACT ============ -->
+    <section class="contact dark-surface" id="contact" aria-labelledby="contact-title" data-lit>
+      <svg class="contact-lines" viewBox="0 0 1440 760" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M-60 640C260 260 760 780 1520 40" data-draw/>
+        <path d="M-60 680C260 300 760 820 1520 80" data-draw/>
+      </svg>
+      <div class="aurora" aria-hidden="true"><i class="au au--a"></i><i class="au au--b"></i><i class="au au--c"></i></div>
+      <div class="glow-spots" aria-hidden="true"><i class="gs gs--a"></i><i class="gs gs--b"></i><i class="gs gs--c"></i></div>
       <div class="shell">
-        <div class="section-topline" data-reveal><p class="section-label section-label--light"><span>04</span>Следующий проект — ваш?</p><div class="section-topline-actions"><p class="section-meta section-meta--light">LET'S MAKE SOMETHING GOOD</p></div></div>
-        <div class="contact-heading" data-reveal data-scene-enter><h2 id="contact-title"><span class="display-line"><span data-type-line>Начнём</span></span><span class="display-line"><span data-type-line><em>с разговора.</em></span></span></h2><span class="contact-arrow" aria-hidden="true"><svg class="contact-orbit-type" viewBox="0 0 100 100"><defs><path id="contact-orbit-path" d="M50,50 m-43,0 a43,43 0 1,1 86,0 a43,43 0 1,1 -86,0"/></defs><text><textPath href="#contact-orbit-path" textLength="266">YOUR NEXT CHAPTER · TRY / HARD · DESIGN &amp; CODE · </textPath></text></svg><svg class="icon"><use href="#arrow-up-right"/></svg></span></div>
-        <div class="contact-bottom" data-reveal data-scene-enter>
-          <div class="contact-message">
-            <p>Есть идея, задача или сайт, которому нужен новый характер? Напишите в том мессенджере, где получили ссылку на портфолио. Обсудим объём и следующий шаг.</p>
-            <nav class="social-links social-links--contact" aria-label="Связаться — контакты">
-              <a class="social-link" href="https://vk.ru/tryhardwork" target="_blank" rel="noopener" aria-label="VK — профиль TRY/HARD, новая вкладка" data-contact-channel="vk">VK<svg class="icon" aria-hidden="true"><use href="#arrow-up-right"/></svg></a>
-              <a class="social-link" href="https://t.me/w333ntaryk" target="_blank" rel="noopener" aria-label="Telegram — написать TRY/HARD, новая вкладка" data-contact-channel="telegram">Telegram<svg class="icon" aria-hidden="true"><use href="#arrow-up-right"/></svg></a>
-              <a class="social-link" href="https://max.ru/u/f9LHodD0cOJSXVws0FqQomlxJ1d2Ss3WUUin1xHbbfO2mo94Tqf8PqavAMs" target="_blank" rel="noopener" aria-label="MAX — написать TRY/HARD, новая вкладка" data-contact-channel="max">MAX<svg class="icon" aria-hidden="true"><use href="#arrow-up-right"/></svg></a>
-            </nav>
-            <span class="contact-availability"><i aria-hidden="true"></i>Открыт к новым проектам</span>
-          </div>
-          <a class="github-card" href="https://github.com/TryHardworking" target="_blank" rel="noopener" data-depth-card><span><small>Мой GitHub</small><strong>TryHardworking</strong><span class="github-card-caption">КОД, КОНЦЕПТЫ, ДЕТАЛИ</span></span><svg class="icon" aria-hidden="true"><use href="#arrow-up-right"/></svg></a>
+        <div class="section-top" data-reveal>
+          <p class="kicker kicker--light"><span>06</span>Следующий проект — ваш?</p>
+          <p class="kicker-meta kicker-meta--light">Let's make something good</p>
         </div>
+
+        <div class="contact-head" data-reveal>
+          <h2 class="display" id="contact-title">
+            <span class="mask"><span class="mask-in">Начнём</span></span>
+            <span class="mask"><span class="mask-in"><em>с разговора.</em></span></span>
+          </h2>
+          <span class="stamp stamp--contact" aria-hidden="true">
+            <svg viewBox="0 0 100 100"><defs><path id="stamp-contact" d="M50,50 m-43,0 a43,43 0 1,1 86,0 a43,43 0 1,1 -86,0"/></defs><text><textPath href="#stamp-contact" textLength="268">YOUR NEXT CHAPTER · TRY / HARD · DESIGN & CODE · </textPath></text></svg>
+            <svg class="icon"><use href="#i-arrow"/></svg>
+          </span>
+        </div>
+
+        <div class="contact-grid" data-reveal>
+          <div class="contact-copy">
+            <p>Есть идея, задача или сайт, которому нужен новый характер? Напишите в удобном мессенджере — обсудим объём и следующий шаг.</p>
+            <nav class="contact-social" data-stagger aria-label="Контакты">
+              <a href="https://vk.ru/tryhardwork" target="_blank" rel="noopener"><em>VK</em><span>группа и сообщения</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+              <a href="https://t.me/w333ntaryk" target="_blank" rel="noopener"><em>Telegram</em><span>быстрее всего</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+              <a href="https://max.ru/u/f9LHodD0cOJSXVws0FqQomlxJ1d2Ss3WUUin1xHbbfO2mo94Tqf8PqavAMs" target="_blank" rel="noopener"><em>MAX</em><span>мессенджер</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            </nav>
+            <p class="contact-status"><i aria-hidden="true"></i>Открыт к новым проектам</p>
+          </div>
+          <a class="github-card" href="https://github.com/TryHardworking" target="_blank" rel="noopener" data-magnetic>
+            <span><small>Мой GitHub</small><strong>TryHardworking</strong><em>код, концепты, детали</em></span>
+            <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>
+          </a>
+        </div>
+
+        <div class="contact-cta" data-reveal>
+          <a class="btn btn--accent btn--big" href="https://t.me/w333ntaryk" target="_blank" rel="noopener" data-magnetic><span>Написать в Telegram</span><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          <p class="cta-note">Отвечаю лично. Напишите пару строк о задаче — предложу путь и срок.</p>
+        </div>
+        <p class="finale-em" data-reveal>Детали решают. Ваш проект — следующий.</p>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer dark-surface site-footer--flagship" data-scene>
+  <footer class="footer dark-surface" data-lit>
+    <div class="glow-spots" aria-hidden="true"><i class="gs gs--a"></i><i class="gs gs--b"></i><i class="gs gs--c"></i></div>
     <div class="shell">
       <div class="footer-top">
         <p>Дизайн. Разработка. Характер.</p>
-        <nav class="social-links social-links--footer" aria-label="Связаться — подвал">
-          <a class="social-link" href="https://vk.ru/tryhardwork" target="_blank" rel="noopener" aria-label="VK — профиль TRY/HARD, новая вкладка" data-contact-channel="vk">VK<svg class="icon" aria-hidden="true"><use href="#arrow-up-right"/></svg></a>
-          <a class="social-link" href="https://t.me/w333ntaryk" target="_blank" rel="noopener" aria-label="Telegram — написать TRY/HARD, новая вкладка" data-contact-channel="telegram">Telegram<svg class="icon" aria-hidden="true"><use href="#arrow-up-right"/></svg></a>
-          <a class="social-link" href="https://max.ru/u/f9LHodD0cOJSXVws0FqQomlxJ1d2Ss3WUUin1xHbbfO2mo94Tqf8PqavAMs" target="_blank" rel="noopener" aria-label="MAX — написать TRY/HARD, новая вкладка" data-contact-channel="max">MAX<svg class="icon" aria-hidden="true"><use href="#arrow-up-right"/></svg></a>
-        </nav>
-        <a href="#top">Вернуться наверх<svg class="icon" aria-hidden="true"><use href="#arrow-up-right"/></svg></a>
+        <a class="line-link line-link--light" href="#top">Вернуться наверх<svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
       </div>
-      <a class="footer-wordmark" href="#top" aria-label="TRY/HARD — наверх" data-scene-enter><span class="footer-wordmark-inner" data-type-line>TRY<span>/</span>HARD</span></a>
-      <div class="footer-bottom"><p>© <span data-year>2026</span> TRY/HARD</p><p>С вниманием к деталям.</p><button class="motion-toggle" type="button" data-motion-toggle aria-pressed="false" hidden>Меньше анимаций<span class="motion-indicator" aria-hidden="true"></span></button></div>
+      <p class="footer-wordmark" aria-hidden="true" data-reveal>TRY<span>/</span>HARD</p>
+      <div class="footer-bottom">
+        <p>© <span data-year>2026</span> TRY/HARD</p>
+        <p>С вниманием к деталям.</p>
+        <button class="motion-toggle" type="button" data-motion-toggle aria-pressed="false"><span data-motion-label>Меньше анимаций</span><i aria-hidden="true"></i></button>
+      </div>
     </div>
   </footer>
 
-  <dialog class="mobile-menu mobile-menu--flagship" id="mobile-menu" aria-labelledby="menu-title" data-menu-dialog>
-    <div class="mobile-menu-header"><p class="brand" id="menu-title">TRY<span>/</span>HARD</p><button class="icon-button" type="button" aria-label="Закрыть меню" data-menu-close><svg class="icon" aria-hidden="true"><use href="#close"/></svg></button></div>
-    <nav aria-label="Мобильная навигация"><a href="#work"><span>01</span>Работы<svg class="icon" aria-hidden="true"><use href="#arrow-up-right"/></svg></a><a href="#approach"><span>02</span>Подход<svg class="icon" aria-hidden="true"><use href="#arrow-up-right"/></svg></a><a href="#process"><span>03</span>Этапы<svg class="icon" aria-hidden="true"><use href="#arrow-up-right"/></svg></a><a href="#contact"><span>04</span>Контакт<svg class="icon" aria-hidden="true"><use href="#arrow-up-right"/></svg></a></nav>
-    <p class="mobile-menu-note">Независимый дизайн + код</p>
-  </dialog>
-
-  <dialog class="project-dialog project-dialog--flagship" id="project-dialog" aria-labelledby="case-title" data-case-dialog>
-    <div class="case-header"><p><span data-case-number>01</span> / PROJECT NOTES</p><button class="icon-button" type="button" aria-label="Закрыть проект" data-case-close><svg class="icon" aria-hidden="true"><use href="#close"/></svg></button></div>
-    <div class="case-layout"><div class="case-image-wrap" data-case-image></div><div class="case-text"><h2 id="case-title" data-case-title></h2><div data-case-body></div><a class="button button--dark" href="#" target="_blank" rel="noopener" data-case-url>Открыть сайт<svg class="icon" aria-hidden="true"><use href="#arrow-up-right"/></svg></a></div></div>
+  <dialog class="mobile-menu dark-surface" id="mobile-menu" aria-labelledby="menu-title" data-menu-dialog>
+    <div class="menu-head">
+      <p class="brand" id="menu-title">TRY<span>/</span>HARD</p>
+      <button class="menu-close" type="button" aria-label="Закрыть меню" data-menu-close><svg class="icon" aria-hidden="true"><use href="#i-close"/></svg></button>
+    </div>
+    <nav class="menu-nav" aria-label="Мобильная навигация">
+      <a href="#work"><span>01</span>Работы<svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      <a href="#nexus"><span>02</span>NEXUS CRM<svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      <a href="#about"><span>03</span>Обо мне<svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      <a href="#approach"><span>04</span>Подход<svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      <a href="#contact"><span>05</span>Контакт<svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+    </nav>
+    <p class="menu-note">Независимый дизайн + код<span>открыт к новым проектам</span></p>
   </dialog>
 </body>
 </html>
