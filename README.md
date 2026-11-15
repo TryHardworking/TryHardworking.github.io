@@ -48,14 +48,22 @@ powershell -ExecutionPolicy Bypass -File serve.ps1
 - Открыть сайт: **http://localhost:8901/tryhard-portfolio-new/**
 - Открыть CRM по ссылке с сайта: кнопка «Открыть NEXUS CRM» → `../nexus-crm/`
 
-## Публикация на GitHub Pages
+## Публикация (выполнено 2026-11-15)
 
-Достаточно положить содержимое этой папки в репозиторий (например, в корень
-`tryhardworking.github.io` или в подпапку) — сборка не нужна. Относительная
-ссылка `../nexus-crm/` заработает, когда папка `nexus-crm/` будет опубликована
-на том же домене рядом с сайтом.
+Сайт опубликован на GitHub Pages и заменяет старую версию портфолио
+(старая осталась в истории репозитория):
 
-## Статус: аудит пройден (v5)
+- Портфолио: **https://tryhardworking.github.io/** — репозиторий
+  `TryHardworking/TryHardworking.github.io`, ветка `main`.
+- NEXUS CRM: **https://tryhardworking.github.io/nexus-crm/** — отдельный
+  репозиторий `TryHardworking/nexus-crm`, ветка `main`.
+
+Относительная ссылка `../nexus-crm/` работает: оба проекта лежат на одном
+домене, CRM — по соседнему пути. Служебные файлы Pages: `.nojekyll`,
+`robots.txt`, `sitemap.xml`. Папка `_shots/` (харнес кадров) в репозиторий
+не входит и в `.git/info/exclude` не публиковалась.
+
+## Статус: опубликован (v6)
 
 Сайт проверен вживую и в headless-браузере перед публикацией.
 
